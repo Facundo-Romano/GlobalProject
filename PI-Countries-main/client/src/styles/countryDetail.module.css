@@ -1,0 +1,123 @@
+.detail {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100%;
+    gap: 32pxpx;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 10%;
+    max-width: 20%;
+    min-height: 100px;
+    background: #2471A3;
+    border-radius: 25px 0px 0px 25px;
+    padding: 12px;
+}
+
+.links:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.insideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.img {
+    border-radius: 25px;
+    outline: 1px solid #FFFFEA;
+    width: 450px;
+    height: 250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 450px;
+    min-height: 100%;
+    background: #2471A3;
+    border-radius: 25px;
+}
+
+.info:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px; 
+    padding-bottom: 16px;
+}
+
+.name {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #FFFFEA;
+    font-weight: 600;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 35px;
+    border-radius: 8px;
+    outline: 0.5px solid #FFFFEA;
+}
+
+.h1 {
+    font-size: 1.5em;
+    color: #FFFFEA;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    gap: 8px;
+}
+
+.a {
+    max-height: 25px;
+    width: auto;
+    text-decoration: none;
+    font-size: 1em;
+    color: #FFFFEA;
+    padding: 8px;
+    outline: 0.5px solid #FFFFEA;
+    border-radius: 8px;
+}
+
+.a:hover {
+    background: #cae2f3;
+}

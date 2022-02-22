@@ -1,0 +1,211 @@
+.activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 32px;
+}
+
+.bigContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+    height: 100%;
+    background: #2471A3;
+    border-radius: 50px 50px 0px 0px;
+    padding-top: 64px;
+}
+
+.formContainer:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.h1 {
+    padding: 12px;
+    font-size: 2em;
+    color: #FFFFEA;
+    background: #2471A3;
+    border-radius: 25px;
+}
+
+.h1:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 255px;
+    min-height: 35px;
+    outline: 1px solid #FFFFEA;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+
+.selectedCountries {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 200px;
+    max-width: 30%;
+    min-height: 300px;
+    max-height: 100%;
+    gap: 8px;
+    background: #2471A3;
+    border-radius: 25px 0px 0px 25px;
+    padding: 12px;
+}
+
+.selectedCountries:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.label {
+    color: #FFFFEA;
+    font-size: 1em;
+}
+
+.input {
+    width: 166px;
+    height: 20px;
+    border: none;
+    padding: none;
+    border-radius: 8px;
+    outline: 1px solid #FFFFEA;
+    background: white;
+}
+
+.input:focus {
+    background: #cae2f3;
+}
+
+.input:hover {
+    background: #cae2f3;
+}
+
+.select {
+    width: 170px;
+    height: 24px;
+    border: none;
+    border-radius: 8px;
+    outline: 1px solid #FFFFEA;
+    background: white;
+}
+
+.select:focus {
+    background: #cae2f3;
+}
+
+.select:hover {
+    background: #cae2f3;
+}
+
+.countries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    min-height: 25px;
+    background: white;
+    border-radius: 8px;
+    outline: 1px solid #FFFFEA;
+    padding: 8px;
+}
+
+.countries:hover {
+    background: #cae2f3;
+}
+
+.name {
+    background: transparent;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.h1Countries {
+    font-size: 1em;
+    color: #FFFFEA;
+}
+
+.navlink {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    max-width: 20%;
+    min-height: 50px;
+    max-height: 100%;
+    background: #2471A3;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.navlink:hover {
+    outline: 1px solid #FFFFEA;
+    background: #cae2f3
+}
+
+.linkButton {
+    text-decoration: none;
+    display: flex;
+    color: #FFFFEA;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.addActivity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    min-height: 35px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    outline: 1px solid #FFFFEA;
+}
+
+.addActivity:hover {
+    background: #cae2f3;
+}
+
+.error {
+    font-size: 1em;
+    color: red;
+}

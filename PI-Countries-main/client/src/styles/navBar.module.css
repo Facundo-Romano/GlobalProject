@@ -1,0 +1,174 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #2471A3;
+    border-radius: 0px 0px 32px 32px;
+    height: 100px;
+    width: 100%;
+    transition: height 500ms, border-radius 1000ms ease-out;
+    box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.3);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+    width: 60%;
+    height: 100%;
+    padding-left: 16px;
+}
+
+/* Logo */
+
+.insideContainer {
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    min-height:100%;
+}
+
+.logo {
+    height: 3.5em;
+    width: 3.5em;
+    margin-bottom: 5px;
+}  
+
+.home {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #FFFFEA;
+    font-weight: 650;
+}
+
+.br {
+    display: none;
+}
+
+/* SearchBar */
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    min-height: 100%;
+    transition: width 1000ms ;
+    cursor: pointer;
+}
+
+.searchBar:hover {
+    width: 350px;
+}
+
+/* Links */
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    padding-right: 32px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 8px;
+    color: #FFFFEA;
+    cursor: pointer;
+    transition: background 500ms;
+}
+
+.link:hover {
+    background: #FFFFEA;
+    color: #2471A3;
+}
+
+/* Toggle Menu */
+
+.arrow {
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 32px;
+    transition: transform 600ms;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1050px) {
+
+    .arrow {
+        display: flex;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 25%;
+        min-width: 175px;
+        max-height: 0px;
+        padding: 0px;
+        background: #2471A3;
+        position: absolute;
+        border-radius: 0px 0px 12px 12px;
+        top: 90px;
+        right: 0;
+        z-index: 1;
+        transition: max-height 1000ms;
+    }
+
+    .navbar:hover {
+        height: 90px;
+    }
+
+    .link {
+        padding: 12px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1500ms, opacity 500ms linear;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: 60px;
+    }
+
+    .insideContainer {
+        width: 100%;
+    }
+
+    .navbar:hover {
+        height: 60px;
+    }
+
+    .searchBar:hover .links {
+        max-height: 0px;
+    }
+
+    .links {
+        top: 60px;
+    }
+
+    .container {
+        width: calc(100vw - 70px);
+        gap: 16px;
+    }
+}

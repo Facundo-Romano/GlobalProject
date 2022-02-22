@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #FFFFEA;
+    border-radius: 8px;
+    width: 100%;
+    height: 30px;
+    padding-left: 16px;
+    background: #fff;
+}
+
+.input {
+    background: transparent;
+    border: transparent;
+    color: #07090F;
+    min-width: 80%;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    color: #FFFFEA;
+    cursor: pointer;
+}
+
+.search {
+    width: 15px;
+    height: 15px;
+}

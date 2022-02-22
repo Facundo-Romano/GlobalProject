@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 55%;
+    min-height: 200px;
+    max-height: 40%;
+    gap: 32px;
+    padding: 5%;
+    background: #2471A3;
+    border-radius: 0px 16px 16px 0px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+    transition: width 1000ms;
+}
+
+.container:hover{
+    width: 100%;
+}
+
+/* First filter */
+
+.filters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    max-height: 85px;
+    gap: 16px;
+}
+
+.label {
+    font-size: 1.5em;
+    color: #FFFFEA;
+}
+
+.select {
+    height: 40%;
+    min-height: 30px;
+    width: 50%;
+    border-radius: 8px;
+    background: white;
+    outline: 0.5px solid #FFFFEA;
+    cursor: pointer;
+}
+
+.select:focus {
+    background: #cae2f3;
+}
+
+.select:hover {
+    background: #cae2f3;
+}
+
+/* Second filter */
+
+.continents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+}
+
+.continentsFilters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    max-height: 85px;
+    gap: 16px;
+}
+
+/* Mapped countries */
+
+.selectedContinents {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    gap: 10px;
+}
+
+.mapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #cae2f3;
+    outline: 0.5px solid #FFFFEA;
+    padding: 5px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.mappedName {
+    color: #1E2019;
+    background: transparent;
+}
+
+.mappedButton {
+    color: #1E2019;
+    background: transparent;
+    border: none;
+}
+
+.mappedButton:hover {
+    color: black;
+}
+
+/* Responsiveness */
+
+@media (max-width: 950px) {
+    .container {
+        width: 100%
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        max-width: 60%;
+        border-radius: 16px;
+        align-items: center; 
+    }
+
+    .filters {
+        align-items: center;
+    }
+
+    .continents {
+        align-items: center;
+    }
+
+    .continentsFilters {
+        align-items: center;
+    }
+}

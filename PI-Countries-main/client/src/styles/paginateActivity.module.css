@@ -1,0 +1,34 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    background: #2471A3;
+    border-radius: 32px;
+}
+
+.nav:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 55px;
+    background: #FED9B7;
+    outline: 0.5px solid #FFFFEA;
+    border-radius: 8px;
+}
+
+.numbers:hover {
+    background: #cae2f3;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+}

@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Filters & Paginate */
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: calc(350px + 10%)
+
+}
+
+/* Countries */
+
+.countries {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(89% - 350px)
+}
+
+/* Country not found */
+
+.noCountryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    min-width: 450px;
+    height: 40%;
+    min-height: 300px;
+    background: #2471A3;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.noCountryContainer:hover {
+    outline: 1px solid #FFFFEA;
+}
+
+.noCountryImg {
+    width: 200px;
+    height: 170px;
+}
+
+.noCountryH1 {
+    color: #FFFFEA;
+    font-size: 2em;
+}
+
+.noCountryButton {
+    background: transparent;
+    border: none;
+    width: 75px;
+    height: 40px;
+    border-radius: 8px;
+    color: #FFFFEA;
+    font-size: 1em;
+}
+
+.noCountryButton:hover {
+    outline: 1px solid #FFFFEA;
+    background: #cae2f3;
+}
+
+/* Responsiveness */
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 32px;
+        gap: 64px;
+    }
+
+    .countries {
+        width: 100%;
+    }
+}
