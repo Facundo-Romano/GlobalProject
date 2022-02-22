@@ -10,7 +10,6 @@ import icon from '../media/error.png';
 
 
 
-
 const CountriesContainer = ({ getCountries, searchCountries, filteredCountries, countries, searched, filteredByContinent }) => {
     const [loading, setLoading] = useState(false);
     const [countriesPerPage] = useState(4);

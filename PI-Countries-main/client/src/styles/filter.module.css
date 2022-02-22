@@ -43,7 +43,7 @@
     min-height: 30px;
     width: 50%;
     border-radius: 8px;
-    background: white;
+    background: #FFFFEA;
     outline: 0.5px solid #FFFFEA;
     cursor: pointer;
 }
@@ -123,6 +123,7 @@
 
 @media (max-width: 950px) {
     .container {
+        border-radius: 16px;
         width: 100%
     }
 }
@@ -130,7 +131,6 @@
 @media (max-width: 750px) {
     .container {
         max-width: 60%;
-        border-radius: 16px;
         align-items: center; 
     }
 

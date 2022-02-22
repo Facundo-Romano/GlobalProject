@@ -41,6 +41,14 @@ const CountryDetail = ({ setDetail, detail }) => {
                             <p className={styles.text}>Area: {detail[0].area} km2</p>
                             <p className={styles.text}>Population: {detail[0].population}</p>
                         </div>
+                        <div className={styles.responsiveLinks}>
+                            <h1 className={styles.responsiveH1}>Activities: </h1>
+                            <div className={styles.responsiveActivities}>
+                                {detail[0].Activities.map(item => (
+                                    <NavLink to={`/home/activities/${item.id}`} className={styles.responsiveA} key={item.id}>{item.name}</NavLink>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.links}>

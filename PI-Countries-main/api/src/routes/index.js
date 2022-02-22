@@ -63,7 +63,7 @@ router.post('/activity', async (req, res) => {
         res.status(200).send('Activity created succesfully');
     } catch (error) {
         console.log(error);
-        res.status(404).send('error creating a new activity')
+        res.status(400).send('error creating a new activity')
     }
 });
 
@@ -86,50 +86,3 @@ router.get('/activities/:activityId', async (req, res) => {
 
 
 module.exports = router;
-
-
-
-/* {
-    "name": "Hiking",
-    "difficulty": 3,
-    "duration": 2,
-    "season": "winter",
-    "img": "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-    "countries": ["ARG", "QAT", "MEX"]
-} */
-
-/* {
-    "name": "Surfing",
-    "difficulty": 4,
-    "duration": 1,
-    "season": "summer",
-    "img": "https://static01.nyt.com/images/2021/08/22/books/review/Bissell/Bissell-facebookJumbo.jpg",
-    "countries": ["AFG", "AND"]
-} */
-
-/* {
-    "name": "Shopping",
-    "difficulty": 1,
-    "duration": 5,
-    "season": "spring",
-    "img": "https://www.globalblue.com/business/images/article926851.ece/alternates/LANDSCAPE2_970/TFS_Article_2019_970x643.jpg",
-    "countries": ["QAT", "ARG", "AFG", "MEX"]
-} */
-
-/* {
-    "name": "Painting",
-    "difficulty": 1,
-    "duration": 3,
-    "season": "winter",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKPgfn8s_B56kGmZdEKBep7la98dZ2xr6ScQ&usqp=CAU",
-    "countries": ["QAT", "ARG", "AFG", "MEX", "ALA"]
-} */
-
-/* {
-    "name": "Sight seeing",
-    "difficulty": 2,
-    "duration": "4 hs",
-    "season": "summer",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0AWqnzdq4nWN20xA8ln4wLj4va4RWmGiERQ&usqp=CAU",
-    "countries": ["ARG", "QAT", "MEX", "ALA", "AFG"]
-} */

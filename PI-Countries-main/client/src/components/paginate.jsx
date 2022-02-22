@@ -63,6 +63,10 @@ const Paginate = ({ pageNumbers, setCurrentPage, currentPage, loading }) => {
     };
 
     if (pageNumbers.length < 5) {
+        if (pageNumbers.length < 2) {
+            return null
+        }; 
+
         return ( 
             <nav className={styles.nav}>
                 <div className={styles.container}>
@@ -72,7 +76,7 @@ const Paginate = ({ pageNumbers, setCurrentPage, currentPage, loading }) => {
                 </div>
             </nav>
         )
-    }
+    };
 
     return (
         <nav className={styles.nav}>

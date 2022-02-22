@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 import { getCountries } from '../redux/actions';
 import axios from 'axios';
 import PopUp from './popUp';
+import Animation from '../media/loading.gif';
 
 
 
@@ -121,6 +122,7 @@ const CreateActivity = ({ searchCountries, filterByContinent, countries, getCoun
         } else {
             for (let i=0; i < length; i++) {
                 sendCountries.push(newActivity.countries[i].substring(newActivity.countries[i].length - 4, newActivity.countries[i].length - 1))
+                console.log(sendCountries)
             };
             sendActivity();
             setNewActivity({
@@ -139,7 +141,10 @@ const CreateActivity = ({ searchCountries, filterByContinent, countries, getCoun
         return (
             <div className={styles.activity}>
                 <NavBar/>
-                <p>Loading...</p>
+                <div className={styles.loading}>
+                    <img src={Animation} alt='' className={styles.loadingImg}/>
+                    <h1 className={styles.loadingH1}>Loading</h1>
+                </div>
             </div>
         )
     };
@@ -153,7 +158,7 @@ const CreateActivity = ({ searchCountries, filterByContinent, countries, getCoun
                     <NavLink to='/home' className={styles.linkButton}>Back</NavLink>
                 </div>
                 <form id='formContainer' onSubmit={(e) => handleSubmit(e)} className={styles.formContainer}>
-                        <h1 className={styles.h1}>Add Touristic Activity</h1>
+                        <h1 className={styles.h1}>New Touristic Activity</h1>
                         <div className={styles.form} name='nameForm'>
                             <label className={styles.label} htmlFor='name'>Name:</label>
                             <input type='text' id='name' name='name' className={styles.input} value={newActivity.name} onChange={(e) => handleChange(e)}/>
@@ -208,6 +213,15 @@ const CreateActivity = ({ searchCountries, filterByContinent, countries, getCoun
                             </select>
                         </div>
                         <label htmlFor='countriesForm' className={styles.error}>{countriesError}</label>
+                        <div className={styles.responsiveSelectedCountries}>
+                            <h1 className={styles.responsiveH1Countries}>Selected countries:</h1>
+                            {newActivity.countries.map(item => (
+                                <div name={item} key={item} className={styles.responsiveCountries}>
+                                        <div name={item} key={item} className={styles.responsiveName}>{item}</div>
+                                        <button value={item} className={styles.responsiveButton} onClick={(e) => removeContinent(e)}>x</button> 
+                                </div>
+                            ))}
+                        </div>
                         <button className={styles.addActivity} type='submit'>Add Activity</button>
                 </form>
                 <div className={styles.selectedCountries}>

@@ -1,10 +1,15 @@
 import styles from '../styles/country.module.css';
 import { NavLink } from 'react-router-dom';
-
+import Animation from '../media/loading.gif';
 
 const Country = ({ loading, countries }) => {
     if(loading){
-        return <h2>Loading...</h2>
+        return (
+            <div className={styles.loading}>
+                <img src={Animation} alt='' className={styles.loadingImg}/>
+                <h1 className={styles.loadingH1}>Loading</h1>
+            </div>
+        )
     };
 
     return (

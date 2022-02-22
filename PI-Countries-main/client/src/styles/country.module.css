@@ -61,3 +61,24 @@
     font-size: 0.9em;
     color: #FFFFEA;
 }
+
+/* Loading animation */
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 8px;
+}
+
+.loadingImg {
+    width: 64px;
+    height: 64px;
+}
+
+.loadingH1 {
+    font-size: 1.2em;
+    color: #2471A3;
+}

@@ -12,7 +12,7 @@ import NavBar from './navBar';
 
 const ActivityContainer = ({ getActivities, activities, searchCountries, filterByContinent }) => {
     const [loading, setLoading] = useState(false);
-    const [activitiesPerPage] = useState(10);
+    const [activitiesPerPage] = useState(8);
     const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
