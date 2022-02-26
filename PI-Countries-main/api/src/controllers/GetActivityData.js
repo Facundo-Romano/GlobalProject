@@ -21,7 +21,7 @@ const getActivityData = async () => {
         };
         return dataValues
     } catch (error) {
-        console.log(error)
+        return []
     }
 };
 

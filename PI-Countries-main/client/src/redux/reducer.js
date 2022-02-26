@@ -11,7 +11,6 @@ import {
 } from './types.js';
 
 
-
 const initialState = {
     countries: [],
     filteredCountries: [],

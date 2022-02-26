@@ -12,13 +12,15 @@ const style = {
     'width': 'auto'
 };
 
-const ActivityDetail = ({ setDetail, detail }) => {
+const ActivityDetail = ({ setDetail, detail, activities }) => {
     const [loading, setLoading] = useState(true);
     const { activityId } = useParams();
     useEffect(() => {
         let getCountry = async () => {
-            let info = await axios.get(`http://localhost:3001/activities/${activityId}`);
-            setDetail(info.data)
+            try {
+                let info = await axios.get(`http://localhost:3001/activities/${activityId}`);
+                setDetail(info.data)
+            } catch {}
             setLoading(false)
         };
         getCountry();

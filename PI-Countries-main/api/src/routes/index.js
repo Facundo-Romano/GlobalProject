@@ -4,6 +4,22 @@ const { getDbData } = require('../controllers/getDbData');
 const { getActivityData } = require('../controllers/getActivityData');
 const { Country, Activity } = require('../db.js');
 const router = Router();
+const { preLoadedActivities } = require('./preLoadedActivities.js');
+
+
+
+const setInitialActivities = async () => {
+    let activities = await getActivityData().catch((err) => console.log(err));
+    if (activities.length < 1) {
+        for (let i=0; i < 10; i++) {
+            await Activity.create(preLoadedActivities[i]).then(async (res) => {
+                for (let j=0; j < preLoadedActivities[i].countries.length; j++) {
+                    await res.addCountry(preLoadedActivities[i].countries[j]).catch((err) => console.log(err) );
+                }
+            }).catch((err) => console.log(err));
+        }
+    }
+};
 
 
 
@@ -29,6 +45,7 @@ router.get('/countries', async (req, res) => {
             }
         })
     };
+    setInitialActivities();
     res.status(200).send(apiData);
 });
 
@@ -63,7 +80,7 @@ router.post('/activity', async (req, res) => {
         res.status(200).send('Activity created succesfully');
     } catch (error) {
         console.log(error);
-        res.status(400).send('error creating a new activity')
+        res.status(400).send('Error creating a new activity')
     }
 });
 

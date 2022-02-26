@@ -31,11 +31,10 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 const { Country, Activity } = sequelize.models;
 
-CountryActivity = sequelize.define('CountryActivity');
+CountryActivity = sequelize.define('CountryActivities');
 
-Country.belongsToMany(Activity, { through: 'CountryActivity' });
-Activity.belongsToMany(Country, { through: 'CountryActivity' });
-
+Country.belongsToMany(Activity, { through: 'CountryActivities' });
+Activity.belongsToMany(Country, { through: 'CountryActivities' });
 
 
 

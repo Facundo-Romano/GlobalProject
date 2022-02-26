@@ -122,7 +122,6 @@ const CreateActivity = ({ searchCountries, filterByContinent, countries, getCoun
         } else {
             for (let i=0; i < length; i++) {
                 sendCountries.push(newActivity.countries[i].substring(newActivity.countries[i].length - 4, newActivity.countries[i].length - 1))
-                console.log(sendCountries)
             };
             sendActivity();
             setNewActivity({

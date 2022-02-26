@@ -22,8 +22,9 @@ const CountriesContainer = ({ getCountries, searchCountries, filteredCountries, 
                 let country = await axios.get('http://localhost:3001/countries');
                 getCountries(country.data);
                 setLoading(false)
-            };  
-        }
+            }; 
+        };
+
         getData();
     }, [countries.length, getCountries]);
 
