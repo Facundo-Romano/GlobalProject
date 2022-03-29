@@ -21,7 +21,8 @@ It consists of 6 differents routes:
 <img src="./Media/Global_img1.png" width="350px"/> 
 
 ### Mobile view:
-<img src="./Media/Responsive3.png" height="350px"/>
+<img src="./Media/Responsive2.png" height="350px"/> <img src="./Media/Responsive3.png" height="350px"/> <img src="./Media/Responsive4.png" height="350px"/> 
+<img src="./Media/Responsive5.png" height="350px"/>
 
 
 * Country detail '/home/:id': Detail of an specific country, displaying more information about the country and its associated activities.
