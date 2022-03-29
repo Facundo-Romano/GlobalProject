@@ -6,12 +6,12 @@
 It consists of 6 differents routes:
 
 * Landing page '/': Introduction into the proyect and its tecnologies.
-<pre>
+
 ### Desktop view:
 <img src="./Media/global_gif.gif" width="350px"/> 
 ### Mobile view:
 <img src="./Media/Responsive1.png" height="350px"/>
-</pre>
+
 
 * Home '/home': Display of all the countries in the world. Filters to sort the countries based on name, population and/or continent. 
   Searchbar for searching specific countries. Pagination for easy navigation.
