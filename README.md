@@ -73,7 +73,7 @@ The react components are tested using supertest.
 
 ## How to use
 
-- First of all, you will need to have text editor ([VScode](https://code.visualstudio.com/download) recomended). 
+- First of all, you will need to have a text editor ([VScode](https://code.visualstudio.com/download) recomended). 
 - Then install [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/). If you have averything ready then open VScode and run in the terminal:
 
 ```bash
@@ -82,11 +82,12 @@ $ git clone https://github.com/Facundo-Romano/GlobalProyect.git
 ```
 
 - Inside the api folder, you will need to create a file named ".env" like this:
-
+<pre>
     DB_USER=
     DB_PASSWORD=
     DB_HOST=
-    
+</pre>
+
 - You will need to have PostgreSQL installed (learn how [here](https://www.guru99.com/download-install-postgresql.html)).
 - If you already have PostgrSQL, create a new database called countries (learn how [here](https://www.guru99.com/postgresql-create-database.html), tip: scroll down to the section: Create Database using pgAdmin, it is the easier one.).
 - Inside your .env file complete DB_USER with your postgreSQL user and DB_PASSWORD with your postgreSQL password. Complete DB_HOST with localhost. 
