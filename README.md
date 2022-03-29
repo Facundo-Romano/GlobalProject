@@ -89,8 +89,8 @@ $ git clone https://github.com/Facundo-Romano/GlobalProyect.git
 </pre>
 
 - You will need to have PostgreSQL installed (learn how [here](https://www.guru99.com/download-install-postgresql.html)).
-- If you already have PostgrSQL, create a new database called countries (learn how [here](https://www.guru99.com/postgresql-create-database.html), tip: scroll down to the section: Create Database using pgAdmin, it is the easier one.).
-- Inside your .env file complete DB_USER with your postgreSQL user and DB_PASSWORD with your postgreSQL password. Complete DB_HOST with localhost. 
+- If you already have PostgrSQL, create a new database called countries (learn how [here](https://www.guru99.com/postgresql-create-database.html), tip: scroll down to the section: Create Database using pgAdmin, it is the easier one).
+- Inside your .env file complete DB_USER with your postgreSQL user and DB_PASSWORD with your postgreSQL password (not the pgAdmin password). Complete DB_HOST with localhost. 
 
 
 - Now that everything is completed you can start the app. In the terminal run the following commands:
