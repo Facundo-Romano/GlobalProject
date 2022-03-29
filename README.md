@@ -28,19 +28,20 @@ It consists of 6 differents routes:
 * Country detail '/home/:id': Detail of an specific country, displaying more information about the country and its associated activities.
 
 ### Desktop view:
-<img src="./Media/Global_img8.png" width="350px"/> 
+<img src="./Media/Global_img8.png" width="350px"/> <img src="./Media/Global_img10png" width="350px"/>
 
 ### Mobile view:
-<img src="./Media/Responsive9.png" height="350px"/>
+<img src="./Media/Responsive9.png" height="350px"/> <img src="./Media/Responsive10.png" height="350px"/> <img src="./Media/Responsive11.png" height="350px"/>
+<img src="./Media/Responsive12.png" height="350px"/>
 
 
 * Create activity '/home/createActivity': Controlled form to create touristic activities in the desired countries.
 
 ### Desktop view:
-<img src="./Media/Global_img4.png" width="350px"/>
+<img src="./Media/Global_img3.png" width="350px"/> <img src="./Media/Global_img4.png" width="350px"/>
 
 ### Mobile view:
-<img src="./Media/Responsive13.png" height="350px"/>
+<img src="./Media/Responsive13.png" height="350px"/> <img src="./Media/Responsive14.png" height="350px"/> <img src="./Media/Responsive15.png" height="350px"/>
 
 
 * Activities '/home/activities': Display of all the created activities in the database. Pagination for practical navigation.
