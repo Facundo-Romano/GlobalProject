@@ -1,9 +1,10 @@
 # GlobalProyect
-### Responsive single page application.
-#### This proyect was designed using React, sequelize, express, redux, only css, supertest and mocha.
+### Fully  responsive single page application.
+#### Global proyect is designed using React, sequelize, express, redux, only css, supertest and mocha.
 
+## Views
 
-It consists of 6 differents routes:
+Global's views consists of 6 differents routes:
 
 * Landing page '/': Introduction into the proyect and its tecnologies.
 
@@ -62,10 +63,48 @@ It consists of 6 differents routes:
 <img src="./Media/Responsive8.png" height="350px"/>
 
 
-The countries data was extracted from the API ('https://restcountries.com/v3/all') and modified for practical uses.
+The countries data was extracted from the [API](https://restcountries.com/v3/all) and modified for practical uses.
 The database recieves this data and creates all the countries in the Country table. 
 The activities get loaded into the database in the Activity table.
 The relation between Country and Activity is many to many, in the CountryActivity table.
 
 The models and server request are fully tested using mocha.
 The react components are tested using supertest.
+
+## How to use
+
+- First of all, you will need to have text editor ([VScode](https://code.visualstudio.com/download) recomended). 
+- Then install [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/). If you have averything ready then open VScode and run in the terminal:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Facundo-Romano/GlobalProyect.git
+```
+
+- Inside the api folder, you will need to create a file named ".env" like this:
+
+    DB_USER=
+    DB_PASSWORD=
+    DB_HOST=
+    
+- You will need to have PostgreSQL installed (learn how [here](https://www.guru99.com/download-install-postgresql.html)).
+- If you already have PostgrSQL, create a new database called countries (learn how [here](https://www.guru99.com/postgresql-create-database.html), tip: scroll down to the section: Create Database using pgAdmin, it is the easier one.).
+- Inside your .env file complete DB_USER with your postgreSQL user and DB_PASSWORD with your postgreSQL password. Complete DB_HOST with localhost. 
+
+
+- Now that everything is completed you can start the app. In the terminal run the following commands:
+
+```bash
+# Go into the api folder
+$ cd api
+# Install dependencies
+$ npm install
+# Run the backend
+$ npm start
+# Open new terminal
+$ cd client
+# Install dependencies
+$ npm install
+# Run the frontend
+$ npm start
+```
