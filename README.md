@@ -78,7 +78,7 @@ The react components are tested using supertest.
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Facundo-Romano/GlobalProyect.git
+$ git clone https://github.com/Facundo-Romano/GlobalProject.git
 ```
 
 - Inside the api folder, you will need to create a file named ".env" like this:
