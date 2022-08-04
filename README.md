@@ -1,4 +1,4 @@
-# GlobalProyect
+# GlobalProject
 ### Fully  responsive single page application.
 #### Global proyect is designed using React, sequelize, express, redux, only css, supertest and mocha.
 
@@ -6,7 +6,7 @@
 
 Global's views consists of 6 differents routes:
 
-* Landing page '/': Introduction into the proyect and its tecnologies.
+* Landing page '/': Introduction into the project and its tecnologies.
 
 ### Desktop view:
 <img src="./Media/global_gif.gif" width="350px"/>
