@@ -1,6 +1,6 @@
 # GlobalProject
 ### Fully  responsive single page application.
-#### Global proyect is designed using React, sequelize, express, redux, only css, supertest and mocha.
+#### Global project is designed using React, sequelize, express, redux, only css, supertest and mocha.
 
 ## Views
 
